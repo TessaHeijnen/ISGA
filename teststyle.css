@@ -1,0 +1,17 @@
+/* Profile */
+body header a img:nth-of-type(1){
+    width: 2.6em !important;
+    border-radius: 50%;
+    position: fixed;
+    left: 1em;
+    top: 1em;  
+    filter: brightness(120%) contrast(130%);
+}
+
+body header a img:nth-of-type(2){
+    width: 5em;
+    border-radius: 50%;
+    position: fixed;
+    left: 5em;
+    top: 1em;  
+}

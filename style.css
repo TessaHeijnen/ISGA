@@ -12,6 +12,7 @@ header img:nth-of-type(1){
     left: 1em;
     top: 1em;  
     filter: brightness(120%) contrast(130%);
+    z-index: 1;
 }
 
 /* Yellow circle */
@@ -21,6 +22,7 @@ header img:nth-of-type(2){
     position: fixed;
     left: 0.9em;
     top: 0.9em;  
+    z-index: 1;
 }
 
 /* Upload icon */
@@ -30,6 +32,7 @@ header img:nth-of-type(3){
     position: fixed;
     right: 1.5em;
     top: 1.5em;
+    z-index: 1;
 }
 
 /* Purple bursh corner */
@@ -39,7 +42,7 @@ header img:nth-of-type(4){
     right: -7.5em;
     top: -10em;
     image-rendering: pixelated;
-    z-index: -1;
+    z-index: 0;
 }
 
 
@@ -48,7 +51,6 @@ header img:nth-of-type(4){
 /* Discover... */
 .homepopulair main h1{
     color: rgb(0, 0, 0);
-    font-family: Poppins;
     line-height: 1.15em;
     position: fixed;
     top: 3.3em;
@@ -56,20 +58,27 @@ header img:nth-of-type(4){
     padding: 0.3em;
     padding-right: 1.7em;
     background-color: rgb(255, 255, 255);
+    font-family: poppinss;
     font-size: 1.6em;
     text-transform: uppercase;
+}
+
+@font-face {
+    font-family: poppinss;
+    src: url("fonts/Poppins-Bold.ttf") format("opentype");
 }
 
 /* Raster */
 .homepopulair main section:nth-of-type(1) img:nth-of-type(1){
     width: 22em;
     position: fixed;
-    top: 4.7em;
+    top: -0.2em;
     left: -1em;
     z-index: -1;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 2em ;
+    padding-top: 5em;
 }
-
-
 
 .homepopulair main section:nth-of-type(1) img:nth-of-type(2){
     width: 6em;
@@ -79,9 +88,6 @@ header img:nth-of-type(4){
     left: 10em;
     z-index: 1;
 }
-
-
-
 
 /* Navigation---------------------------------------- */
 
@@ -94,6 +100,7 @@ header img:nth-of-type(4){
     scroll-behavior: smooth;
     width: 100%;
     position: fixed;  
+    background-color: rgb(255, 255, 255);
 }
 
 .homepopulair main nav ul {
@@ -103,18 +110,27 @@ header img:nth-of-type(4){
     overflow-x: auto;
     list-style: none;
     white-space: nowrap;
+    gap: 1em;
 }
 
 .homepopulair main nav ul li a {
     display: block;
     margin-right: 2em;
     text-decoration: none;
-    font-family: poppins;
-    font-size: 1em;
+    font-family: heyaugust;
+    font-size: 0.92em;
+    text-transform: uppercase;
+    color: black;
+    background-color: aqua;
+}
+
+@font-face {
+    font-family: heyaugust;
+    src: url("fonts/Hey August.ttf") format("opentype");
 }
 
 /* Underline 1??????????? */
-.homepopulair main nav ul li a:first-of-type{
+.active{
     color: rgb(0, 0, 0);
     border-bottom: 3px solid #000;
     border-image:url(afbhome/underline.png);
@@ -124,33 +140,71 @@ header img:nth-of-type(4){
 }
 
 
+
+
 /* Gallery---------------------------------------- */
 
+/* yellow brush */
+.homepopulair main section:nth-of-type(3) img:first-of-type{
+    max-width: 18em;
+    position: fixed;
+    left:-10em;
+    bottom:-5em;
+    z-index: -3;
+}
 
-
-    
-
-/* Pictures */
+/* Pictures algemeen */
 .homepopulair main section:nth-of-type(2){
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: (8, 6vw);
+    grid-gap: 0.5em;
+    margin-top: 18em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+   
 }
 
 .homepopulair main section:nth-of-type(2) img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -2
 }
 
-/* yellow brush word niet kleiner????? */
-.homepopulair main section:nth-of-type(3) img:first-of-type{
-    max-width: 18em;
-    position: fixed;
-    left:-10em;
-    bottom:-5em;
+/* Adam huis */
+.homepopulair main section:nth-of-type(2) img:nth-of-type(1){
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 4;
 }
+
+/* Adam huis */
+.homepopulair main section:nth-of-type(2) img:nth-of-type(2){
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+}
+
+.homepopulair main section:nth-of-type(2) img:nth-of-type(3){
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;  
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
