@@ -1,340 +1,311 @@
-*{
-padding: 0;
-margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-
 /* Back icon */
-body header nav a:nth-of-type(1){
-    width: 1em;
-    position: fixed;
-    left: 1.5em;
-    top: 1.5em;
-    z-index: 4;
+body header nav a:nth-of-type(1) {
+  width: 1.4em;
+  position: fixed;
+  left: 1.5em;
+  top: 1.5em;
+  z-index: 4;
 }
 
 /* LOGO START */
-body header nav a:nth-of-type(2){
-    width: 6em;
-    position: fixed;
-margin: 5em;
-display: block;
-    z-index: 4;
+body header nav a:nth-of-type(2) {
+  width: 100%;
+  position: fixed;
+  top: 1em;
+  text-align: center;
+  display: block;
+  z-index: 4;
+}
+
+body header nav a:nth-of-type(2) img {
+width: 6em;
 }
 
 /* img straat */
-body main section:first-of-type img:first-of-type{
-    position: fixed;
-    width: 100%;
-   padding: 0;
-   margin: 0;
-    height: 9em;
-    object-fit: cover;
-    z-index: 3;
+body main section:first-of-type img:first-of-type {
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 9em;
+  object-fit: cover;
+  z-index: 3;
 }
 
 /* gele streep*/
-body main section:first-of-type img:nth-of-type(2){
-    width: 22em;
-    height: 0.4em;
-    position: fixed;
-    top:8.85em;
-    padding-bottom: 5.55em;
-    background-color: rgb(255, 255, 255);
+body main section:first-of-type img:nth-of-type(2) {
+  width: 22em;
+  height: 0.4em;
+  position: fixed;
+  top: 8.85em;
+  padding-bottom: 5.55em;
+  background-color: rgb(255, 255, 255);
 }
-
-
-
 
 /* Titel-------------------------------------------------- */
 
 /* Straat Museum */
 
-body main section:nth-of-type(2) h1{
-    color: rgb(0, 0, 0);
-    position: fixed;
-    left: 0.8em;
-    top: 6.2em;
-    font-family: poppinss;
-    font-size: 1.6em;
-    text-transform: uppercase;
-    z-index: 2;
+body main section:nth-of-type(2) h1 {
+  color: rgb(0, 0, 0);
+  position: fixed;
+  left: 0.8em;
+  top: 6.2em;
+  font-family: poppinss;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  z-index: 2;
 }
 
 @font-face {
-    font-family: poppinss;
-    src: url("fonts/Poppins-Bold.ttf") format("opentype");
+  font-family: poppinss;
+  src: url("fonts/Poppins-Bold.ttf") format("opentype");
 }
 
 /* Navigation mark */
-body main section:nth-of-type(2) a{
-    width: 1em;
-    position: fixed;
-    left: 1.4em;
-    top: 12.2em;
-    z-index: 2;
+body main section:nth-of-type(2) a {
+  width: 1em;
+  position: fixed;
+  left: 1.4em;
+  top: 12.2em;
+  z-index: 2;
 }
 
-
 /* gele streep mini*/
-body main section:nth-of-type(2) article img:first-of-type{
-    width: 3em;
-    height: 0.2em;
-    position: fixed;
-    left: 3em;
-    top:13.5em;
+body main section:nth-of-type(2) article img:first-of-type {
+  width: 3em;
+  height: 0.2em;
+  position: fixed;
+  left: 3em;
+  top: 13.5em;
 }
 
 /* paarse streep*/
-body main section:nth-of-type(2) article img:nth-of-type(2){
-    position: fixed;
-    width: 24em;
-    right: -3em;
-    top: 6em;
+body main section:nth-of-type(2) article img:nth-of-type(2) {
+  position: fixed;
+  width: 24em;
+  right: -3em;
+  top: 6em;
 }
 
 /* arrow geel*/
-body main section:nth-of-type(2) img:nth-of-type(3){
-    position: fixed;
-    width: 2.5em;
-    top:8em;
-    right: 1.2em;
-    z-index: 4;
+body main section:nth-of-type(2) img:nth-of-type(3) {
+  position: fixed;
+  width: 2.5em;
+  top: 8em;
+  right: 1.2em;
+  z-index: 4;
 }
 
-
-
 /* Adres */
-body main section:nth-of-type(2) h2{
-    color: rgb(0, 0, 0);
-    position: fixed;
-    left: 3em;
-    top: 12.4em;
-    font-family: heyaugust;
-    font-size: 1em;
-    letter-spacing: 0.05em; 
+body main section:nth-of-type(2) h2 {
+  color: rgb(0, 0, 0);
+  position: fixed;
+  left: 3em;
+  top: 12.4em;
+  font-family: heyaugust;
+  font-size: 1em;
+  letter-spacing: 0.05em;
 }
 
 @font-face {
-    font-family: heyaugust;
-    src: url("fonts/Hey August.ttf") format("opentype");
+  font-family: heyaugust;
+  src: url("fonts/Hey August.ttf") format("opentype");
 }
 
 /* Tekst-------------------------------------------------- */
 
 /* tekst */
-body main section:nth-of-type(3) p{
-    color: rgb(0, 0, 0);
-    position:absolute;
-    left: 1.8em;
-    top: 21em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.7em;
-    letter-spacing: 0.05em; 
-    margin-right: 2em;
-    z-index: -2;
+body main section:nth-of-type(3) p {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  left: 1.8em;
+  top: 21em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 0.05em;
+  margin-right: 2em;
+  z-index: -2;
 }
 
 /* Fun Info-------------------------------------------------- */
 
-body main section:nth-of-type(4){
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    position: relative;
-    top: 28.1em;
-    z-index: -2;
-} 
+body main section:nth-of-type(4) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  top: 28.1em;
+  z-index: -2;
+}
 
 /* Colummen algemeen*/
-.artworks, .surface, .topartist{
-display: flex;
-flex-direction:column;
-align-items: center;
+.artworks,
+.surface,
+.topartist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* afbeeldingen*/
-.artworks img, .surface img, .topartist img{
-    width: 2em;
-    position: absolute;
-    bottom: 0.2em; 
+.artworks img,
+.surface img,
+.topartist img {
+  width: 2em;
+  position: absolute;
+  bottom: 0.2em;
 }
 
 /* Artwork*/
-.artworks img{
-    position: absolute;
-    bottom: 0.4em; 
-    }
+.artworks img {
+  position: absolute;
+  bottom: 0.4em;
+}
 
 /* Wall*/
-.surface img{
-width: 3em;
-position: absolute;
-bottom: 0.4em; 
+.surface img {
+  width: 3em;
+  position: absolute;
+  bottom: 0.4em;
 }
 
 /* artist*/
-.topartist img{
-    width: 1.5em;
+.topartist img {
+  width: 1.5em;
 }
 
 /* kop*/
-.artworks h3, .surface h3, .topartist h3{
-    position: absolute;
-    bottom: -1.4em;  
-    font-family: heyaugust;
-    font-size: 1em;
-    letter-spacing: 0.05em; 
-    text-transform: uppercase;
+.artworks h3,
+.surface h3,
+.topartist h3 {
+  position: absolute;
+  bottom: -1.4em;
+  font-family: heyaugust;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 /* Antwoord*/
-.artworks p, .surface p, .topartist p{
-    position: absolute;
-    bottom: -2.3em;  
-    font-family: heyaugust;
-    font-size: 1.2em;
-    color: #5C5AA7;
+.artworks p,
+.surface p,
+.topartist p {
+  position: absolute;
+  bottom: -2.3em;
+  font-family: heyaugust;
+  font-size: 1.2em;
+  color: #5c5aa7;
 }
-
-
-
 
 /* Fotos-------------------------------------------------- */
 
 /* Alles geheel*/
-body main section:nth-of-type(5){
-    position: relative;
-    top: 33em;
-    display: flex;
-    scroll-behavior: smooth;
-    overflow-x: scroll; 
-    padding-left: 1em;
-    padding-bottom: 2.5em;
-    background-color: rgb(255, 255, 255);
-    z-index: -2;
+body main section:nth-of-type(5) {
+  position: relative;
+  top: 33em;
+  display: flex;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  padding-left: 1em;
+  padding-bottom: 2.5em;
+  background-color: rgb(255, 255, 255);
+  z-index: -2;
 }
 
 /* per img*/
-body main section:nth-of-type(5) img{
-    width: 5.5em;
-    height: 5.5em;
-    object-fit: cover;
-    padding-right: 0.5em;
-    scroll-snap-align: center;
+body main section:nth-of-type(5) img {
+  width: 5.5em;
+  height: 5.5em;
+  object-fit: cover;
+  padding-right: 0.5em;
+  scroll-snap-align: center;
 }
 
 /* laatste img*/
-body main section:nth-of-type(5) img:nth-of-type(8){
-    padding-right: 0;
+body main section:nth-of-type(5) img:nth-of-type(8) {
+  padding-right: 0;
 }
 
 /* Google maps-------------------------------------------------- */
-   
 
-body main section:nth-of-type(6){
-    padding:1em;
-    
+body main section:nth-of-type(6) {
+  padding: 1em;
 }
-iframe{
-    position: relative;
-    top: 27em;
-    width: 100%;
-    height: 18em;
-    border: #5C5AA7;
-   overflow:hidden;
-   z-index: -3;
-   padding-bottom: 2.5em;
- 
+iframe {
+  position: relative;
+  top: 27em;
+  width: 100%;
+  height: 18em;
+  border: #5c5aa7;
+  overflow: hidden;
+  z-index: -3;
+  padding-bottom: 2.5em;
 }
 
 /* Grid*/
-body main section:nth-of-type(6) img:first-of-type{
-    position: absolute;
-    overflow: hidden;
-    width: 25em;
-    left:-15em;
-    bottom: -23.7em;
-    z-index: -4;
-} 
-
-
+body main section:nth-of-type(6) img:first-of-type {
+  position: absolute;
+  overflow: hidden;
+  width: 25em;
+  left: -15em;
+  bottom: -23.7em;
+  z-index: -4;
+}
 
 /* Button route */
-body main section:nth-of-type(6) article img:first-of-type{
-    position: absolute;
-    width: 8em;
-    bottom: -22em;
-    left: 10em;
-    z-index: 1;
+body main section:nth-of-type(6) article img:first-of-type {
+  position: absolute;
+  width: 8em;
+  bottom: -22em;
+  left: 10em;
+  z-index: 1;
 }
-
 
 /* Icon route */
-body main section:nth-of-type(6) article img:nth-of-type(2){
-    position: absolute;
-    width: 2em;
-    bottom: -22em;
-    right:1.5em;
-    z-index: 1; 
+body main section:nth-of-type(6) article img:nth-of-type(2) {
+  position: absolute;
+  width: 2em;
+  bottom: -22em;
+  right: 1.5em;
+  z-index: 1;
 }
-
-
-
 
 /* text route */
-body main section:nth-of-type(6) article p{
-    position: absolute;
-    right: 4em;
-    bottom: -21.5em;;
-    z-index: 2;
-    font-family: heyaugust;
-    font-size: 1em;
-    letter-spacing: 0.05em; 
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
+body main section:nth-of-type(6) article p {
+  position: absolute;
+  right: 4em;
+  bottom: -21.5em;
+  z-index: 2;
+  font-family: heyaugust;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
 }
-
-
-
 
 /* Decoratie-------------------------------------------------- */
 
 /* gele vlek*/
-body main section:nth-of-type(7) img:nth-of-type(1){
-    max-width: 15em;
-    position: absolute;
-    rotate: 15deg;
-    left: -6.5em;
-    top:21em;
-    z-index: -3;
+body main section:nth-of-type(7) img:nth-of-type(1) {
+  max-width: 15em;
+  position: absolute;
+  rotate: 15deg;
+  left: -6.5em;
+  top: 21em;
+  z-index: -3;
 }
 
 /* gele circle*/
-body main section:nth-of-type(7) img:nth-of-type(2){
-    position: absolute;
-    width: 3em;
-    right: 2em;
-    top: 29.3em;
-    z-index: -1;
+body main section:nth-of-type(7) img:nth-of-type(2) {
+  position: absolute;
+  width: 3em;
+  right: 2em;
+  top: 29.3em;
+  z-index: -1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
