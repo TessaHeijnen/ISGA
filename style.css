@@ -10,7 +10,7 @@ body {
 /* Bar---------------------------------------- */
 
 /* Profile */
-header:first-child img {
+header a:first-of-type img {
   width: 2.6em;
   border-radius: 50%;
   position: absolute;
@@ -30,17 +30,18 @@ header a:nth-of-type(2) img {
 }
 
 /* LOGO START */
-header a:nth-of-type(4) img {
+header a:nth-of-type(3) img {
   position: absolute;
   left: 50%;
   width: 6em;
   margin-left: -50px;
   border-radius: 0;
   z-index: 2;
+  top:1em;
 }
 
 /* Upload icon */
-header a:nth-of-type(3) img {
+header:nth-of-type(1) img {
   width: 1.4em;
   position: absolute;
   left: 85%;
@@ -49,7 +50,7 @@ header a:nth-of-type(3) img {
 }
 
 /* Purple bursh corner */
-header a:nth-of-type(5) img {
+header a:nth-of-type(4) img {
   width: 19em;
   position: absolute;
   right: -7.5em;
@@ -183,6 +184,9 @@ header a:nth-of-type(5) img {
   grid-gap: 0.5em;
   margin-top: 18em;
   z-index: 1;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .homepopulair main section:nth-of-type(2) img {
@@ -192,6 +196,7 @@ header a:nth-of-type(5) img {
   z-index: 1;
 }
 
+
 /* Adam huis */
 .homepopulair main section:nth-of-type(2) img:nth-of-type(1) {
   grid-column-start: 1;
@@ -200,7 +205,7 @@ header a:nth-of-type(5) img {
   grid-row-end: 4;
 }
 
-/* Adam huis */
+/* Happy faces */
 .homepopulair main section:nth-of-type(2) img:nth-of-type(2) {
   grid-column-start: 3;
   grid-column-end: 6;
@@ -208,15 +213,39 @@ header a:nth-of-type(5) img {
   grid-row-end: 2;
 }
 
-.homepopulair main section:nth-of-type(2) img:nth-of-type(3) {
+/* Anne Frank */
+.homepopulair main section:nth-of-type(2) a:nth-of-type(1) {
   grid-column-start: 3;
   grid-column-end: 6;
   grid-row-start: 2;
   grid-row-end: 4;
 }
 
+/* Famous */
+.homepopulair main section:nth-of-type(2) img:nth-of-type(3) {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+/* Ndsm art */
+.homepopulair main section:nth-of-type(2) img:nth-of-type(4) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.homepopulair main section:nth-of-type(2) img:nth-of-type(5) {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
 /* Footer---------------------------------------- */
 
 footer {
-  color: transparent;
+  display: none;
 }

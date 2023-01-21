@@ -152,6 +152,7 @@ body main section:nth-of-type(4) {
   align-items: center;
 }
 
+
 /* afbeeldingen*/
 .artworks img,
 .surface img,
@@ -204,18 +205,15 @@ body main section:nth-of-type(4) {
 
 /* Fotos-------------------------------------------------- */
 
-/* Alles geheel*/
-body main section:nth-of-type(5) {
-  position: relative;
-  top: 33em;
-  display: flex;
-  scroll-behavior: smooth;
-  overflow-x: scroll;
-  padding-left: 1em;
-  padding-bottom: 2.5em;
-  background-color: rgb(255, 255, 255);
-  z-index: -2;
-}
+
+
+
+
+
+
+
+
+
 
 /* per img*/
 body main section:nth-of-type(5) img {
@@ -227,25 +225,13 @@ body main section:nth-of-type(5) img {
 }
 
 /* laatste img*/
-body main section:nth-of-type(5) img:nth-of-type(8) {
+body main section:nth-of-type(5) img:nth-of-type(7) {
   padding-right: 0;
 }
 
 /* Google maps-------------------------------------------------- */
 
-body main section:nth-of-type(6) {
-  padding: 1em;
-}
-iframe {
-  position: relative;
-  top: 27em;
-  width: 100%;
-  height: 18em;
-  border: #5c5aa7;
-  overflow: hidden;
-  z-index: -3;
-  padding-bottom: 2.5em;
-}
+
 
 /* Grid*/
 body main section:nth-of-type(6) img:first-of-type {
@@ -253,7 +239,7 @@ body main section:nth-of-type(6) img:first-of-type {
   overflow: hidden;
   width: 25em;
   left: -15em;
-  bottom: -23.7em;
+  bottom: -25em;
   z-index: -4;
 }
 
@@ -261,7 +247,7 @@ body main section:nth-of-type(6) img:first-of-type {
 body main section:nth-of-type(6) article img:first-of-type {
   position: absolute;
   width: 8em;
-  bottom: -22em;
+  bottom: -24em;
   left: 10em;
   z-index: 1;
 }
@@ -270,7 +256,7 @@ body main section:nth-of-type(6) article img:first-of-type {
 body main section:nth-of-type(6) article img:nth-of-type(2) {
   position: absolute;
   width: 2em;
-  bottom: -22em;
+  bottom: -24em;
   right: 1.5em;
   z-index: 1;
 }
@@ -279,7 +265,7 @@ body main section:nth-of-type(6) article img:nth-of-type(2) {
 body main section:nth-of-type(6) article p {
   position: absolute;
   right: 4em;
-  bottom: -21.5em;
+  bottom: -23.5em;
   z-index: 2;
   font-family: heyaugust;
   font-size: 1em;
@@ -309,3 +295,59 @@ body main section:nth-of-type(7) img:nth-of-type(2) {
   top: 29.3em;
   z-index: -1;
 }
+
+/* GOOGLE MAPS TEST-------------------------------------------------- */
+
+#mapsbox{
+  
+  color: transparent;
+  left:-0.1em;
+  opacity: 40%;
+  position: relative;
+  bottom:-29.7em;
+  background-color: rgb(117, 87, 48);
+  width: 19em;height:11.5vh;
+  z-index: 10;
+  pointer-events:none;
+}
+
+/* Alles geheel*/
+body main section:nth-of-type(5) {
+  position: relative;
+  top: 33em;
+  display: flex;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  padding-left: 1em;
+  padding-bottom: 2.5em;
+  margin-bottom: 2em;
+  z-index: -2;
+}
+
+
+/* IFRAME*/
+body main section:nth-of-type(6) {
+  padding: 1em;
+}
+iframe {
+  position: relative;
+  top: 26em;
+  width: 100%;
+  height: 15em;
+  border: #5c5aa7;
+  overflow: hidden;
+  z-index: -3;
+padding-bottom: 2em;
+}
+
+/* Bovenkant-------------------------------------------------- */
+ 
+.navmaps img:first-of-type{
+  width: 1.4em !important;
+  z-index: 10!important;
+  position: relative!important;
+  bottom:-31em!important;
+  left: 0.7em!important;
+  pointer-events:none!important;
+}
+
