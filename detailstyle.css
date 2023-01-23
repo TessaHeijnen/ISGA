@@ -23,7 +23,7 @@ body header nav a:nth-of-type(2) {
 }
 
 body header nav a:nth-of-type(2) img {
-width: 6em;
+  width: 6em;
 }
 
 /* img straat */
@@ -81,7 +81,7 @@ body main section:nth-of-type(2) article img:first-of-type {
   width: 3em;
   height: 0.2em;
   position: fixed;
-  left: 3em;
+  left: 2.8em;
   top: 13.5em;
 }
 
@@ -152,7 +152,6 @@ body main section:nth-of-type(4) {
   align-items: center;
 }
 
-
 /* afbeeldingen*/
 .artworks img,
 .surface img,
@@ -205,15 +204,19 @@ body main section:nth-of-type(4) {
 
 /* Fotos-------------------------------------------------- */
 
-
-
-
-
-
-
-
-
-
+/* Alles geheel*/
+body main section:nth-of-type(5) {
+  position: relative;
+  top: 33em;
+  display: flex;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  padding-left: 1em;
+  padding-bottom: 2.5em;
+  background-color: #ffffff;
+  margin-bottom: 2em;
+  z-index: -2;
+}
 
 /* per img*/
 body main section:nth-of-type(5) img {
@@ -231,24 +234,47 @@ body main section:nth-of-type(5) img:nth-of-type(7) {
 
 /* Google maps-------------------------------------------------- */
 
+/* IFRAME*/
+body main section:nth-of-type(6) {
+  padding: 1em;
+}
 
+iframe {
+  position: relative;
+  top: 26em;
+  width: 100%;
+  height: 15em;
+  border: #5c5aa7;
+  overflow: hidden;
+  z-index: -3;
+  padding-bottom: 2em;
+}
 
-/* Grid*/
+/* Info icon */
 body main section:nth-of-type(6) img:first-of-type {
   position: absolute;
-  overflow: hidden;
-  width: 25em;
-  left: -15em;
-  bottom: -25em;
-  z-index: -4;
+  width: 1.6em;
+  left: 2.3em;
+  bottom: -10em;
+  z-index: 4;
+  pointer-events: none;
+}
+
+/* Full Screen icon */
+body main section:nth-of-type(6) a:first-of-type img {
+  position: absolute;
+  width: 1.4em;
+  left: 16.3em;
+  bottom: -10em;
+  z-index: 3;
 }
 
 /* Button route */
 body main section:nth-of-type(6) article img:first-of-type {
   position: absolute;
   width: 8em;
-  bottom: -24em;
-  left: 10em;
+  bottom: -22.8em;
+  left: 11em;
   z-index: 1;
 }
 
@@ -256,16 +282,16 @@ body main section:nth-of-type(6) article img:first-of-type {
 body main section:nth-of-type(6) article img:nth-of-type(2) {
   position: absolute;
   width: 2em;
-  bottom: -24em;
-  right: 1.5em;
+  bottom: -22.8em;
+  right: 0.8em;
   z-index: 1;
 }
 
 /* text route */
 body main section:nth-of-type(6) article p {
   position: absolute;
-  right: 4em;
-  bottom: -23.5em;
+  right: 3em;
+  bottom: -22.4em;
   z-index: 2;
   font-family: heyaugust;
   font-size: 1em;
@@ -281,7 +307,7 @@ body main section:nth-of-type(6) article p {
 body main section:nth-of-type(7) img:nth-of-type(1) {
   max-width: 15em;
   position: absolute;
-  rotate: 15deg;
+  transform: rotate(15deg);
   left: -6.5em;
   top: 21em;
   z-index: -3;
@@ -296,58 +322,40 @@ body main section:nth-of-type(7) img:nth-of-type(2) {
   z-index: -1;
 }
 
+/* Grid*/
+body main section:nth-of-type(7) img:nth-of-type(3) {
+  position: absolute;
+  overflow: hidden;
+  width: 25em;
+  left: -15em;
+  bottom: -24em;
+  z-index: -4;
+}
+
 /* GOOGLE MAPS TEST-------------------------------------------------- */
 
-#mapsbox{
-  
+#mapsbox {
   color: transparent;
-  left:-0.1em;
-  opacity: 40%;
+  left: -0.1em;
   position: relative;
-  bottom:-29.7em;
-  background-color: rgb(117, 87, 48);
-  width: 19em;height:11.5vh;
-  z-index: 10;
-  pointer-events:none;
+  bottom: -29.7em;
+  background-color: #ffffff;
+  border: 3px solid #000;
+  border-image: url(afbdetail/lineblack.svg);
+  border-image-slice: 50;
+  width: 17.8em;
+  height: 7vh;
+  z-index: 2;
+  pointer-events: none;
 }
 
-/* Alles geheel*/
-body main section:nth-of-type(5) {
-  position: relative;
-  top: 33em;
-  display: flex;
-  scroll-behavior: smooth;
-  overflow-x: scroll;
-  padding-left: 1em;
-  padding-bottom: 2.5em;
-  margin-bottom: 2em;
-  z-index: -2;
+#removeright {
+  color: transparent;
+  left: 4.4em;
+  position: absolute;
+  bottom: -10.4em;
+  background-color: rgb(255, 255, 255);
+  width: 14em;
+  height: 8vh;
+  z-index: 1;
 }
-
-
-/* IFRAME*/
-body main section:nth-of-type(6) {
-  padding: 1em;
-}
-iframe {
-  position: relative;
-  top: 26em;
-  width: 100%;
-  height: 15em;
-  border: #5c5aa7;
-  overflow: hidden;
-  z-index: -3;
-padding-bottom: 2em;
-}
-
-/* Bovenkant-------------------------------------------------- */
- 
-.navmaps img:first-of-type{
-  width: 1.4em !important;
-  z-index: 10!important;
-  position: relative!important;
-  bottom:-31em!important;
-  left: 0.7em!important;
-  pointer-events:none!important;
-}
-

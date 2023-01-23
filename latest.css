@@ -37,9 +37,8 @@ header a:nth-of-type(3) img {
   margin-left: -50px;
   border-radius: 0;
   z-index: 2;
-  top:1em;
+  top: 1em;
 }
-
 
 /* Upload icon */
 header:nth-of-type(1) img {
@@ -59,7 +58,6 @@ header a:nth-of-type(4) img {
   left: 50%;
   image-rendering: pixelated;
   z-index: 1;
-
 }
 
 /* Titel---------------------------------------- */
@@ -117,7 +115,6 @@ header a:nth-of-type(4) img {
   scroll-behavior: smooth;
   width: 100%;
   position: absolute;
-
 }
 
 .homepopulair main nav ul {
@@ -129,8 +126,8 @@ header a:nth-of-type(4) img {
   white-space: nowrap;
   gap: 1em;
 }
-.homepopulair main nav ul li{
-    margin-right: 1.5em;
+.homepopulair main nav ul li {
+  margin-right: 1.5em;
 }
 
 .homepopulair main nav ul li a {
@@ -163,7 +160,7 @@ header a:nth-of-type(4) img {
   border-image: url(afbhome/underline.png);
   border-image-slice: 50;
   padding-bottom: 0.2em;
-  padding-right: -1em;
+
 }
 
 /* Gallery---------------------------------------- */
@@ -180,8 +177,8 @@ header a:nth-of-type(4) img {
 /* Pictures algemeen */
 .homepopulair main section:nth-of-type(2) {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: (8, 6vw);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 15vw);
   grid-gap: 0.5em;
   margin-top: 18em;
   z-index: 1;
@@ -197,51 +194,52 @@ header a:nth-of-type(4) img {
   z-index: 1;
 }
 
-
-/* Adam huis */
+/* 3 painting */
 .homepopulair main section:nth-of-type(2) img:nth-of-type(1) {
   grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-/* Happy faces */
-.homepopulair main section:nth-of-type(2) img:nth-of-type(2) {
-  grid-column-start: 3;
-  grid-column-end: 6;
+  grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 
-/* Anne Frank */
+/* Child */
+.homepopulair main section:nth-of-type(2) img:nth-of-type(2) {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+/* Wall */
 .homepopulair main section:nth-of-type(2) img:nth-of-type(3) {
   grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
-}
-
-/* Famous */
-.homepopulair main section:nth-of-type(2) img:nth-of-type(4) {
-  grid-column-start: 3;
-  grid-column-end: 6;
+  grid-column-end: 4;
   grid-row-start: 3;
-  grid-row-end: 5;
+  grid-row-end: 7;
 }
 
-/* Ndsm art */
+/* Purple */
+.homepopulair main section:nth-of-type(2) img:nth-of-type(4) {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+/* Skate */ 
 .homepopulair main section:nth-of-type(2) img:nth-of-type(5) {
   grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 9;
 }
-
-
 
 /* Footer---------------------------------------- */
 
 footer {
-  display: none;
+  width: 0.7em;
+  position: fixed;
+  left: 93%;
+  bottom: 2%;
+  z-index: 2;
 }

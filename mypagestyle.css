@@ -7,6 +7,11 @@ header {
   margin: 0;
 }
 
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* Background profile---------------------------------------- */
 
 /* Back icon */
@@ -35,6 +40,7 @@ body main section:first-of-type img:first-of-type {
   width: 100%;
   padding: 0;
   margin: 0;
+  top: 0;
   height: 9em;
   object-fit: cover;
   z-index: 1;
@@ -46,16 +52,25 @@ body main section:first-of-type img:nth-of-type(2) {
   height: 0.4em;
   position: absolute;
   top: 8.85em;
+  z-index: 2;
 }
 
 /* raster*/
 body main section:first-of-type img:nth-of-type(5) {
-  height: 9.2em;
+  width: 23em;
   position: absolute;
-  top: 0;
-  z-index: 2;
+  top: -0.2em;
+  z-index: 1;
   opacity: 40%;
-  width: 100vw;
+}
+
+/* Upload icon*/
+body main section:first-of-type img:nth-of-type(6) {
+  width: 1.4em;
+  position: absolute;
+  left: 85%;
+  top: 1.5em;
+  z-index: 2;
 }
 
 /* Profile---------------------------------------- */
@@ -129,17 +144,16 @@ body main section:nth-of-type(2) img:nth-of-type(1) {
   z-index: -3;
 }
 
-/* Yellow Brush */
+/* Purple Brush */
 body main section:nth-of-type(2) img:nth-of-type(2) {
-position: fixed;
+  position: fixed;
   width: 15em;
   bottom: -5em;
   right: -6em;
   z-index: -2;
-
-
-
+  display: block;
 }
+
 
 /* Kopjes---------------------------------------- */
 
@@ -182,8 +196,8 @@ body main section:nth-of-type(3) img {
 /* Pictures algemeen */
 main section:nth-of-type(4) {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: (8, 6vw);
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(15, 15vw);
   grid-gap: 0.5em;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -206,80 +220,90 @@ main section:nth-of-type(4) img {
 /* 1. Boy */
 main section:nth-of-type(4) img:nth-of-type(1) {
   grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 5;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 4;
 }
 
 /* 2. Green art */
 main section:nth-of-type(4) img:nth-of-type(2) {
-  grid-column-start: 6;
-  grid-column-end: 9;
+  grid-column-start: 5;
+  grid-column-end: 8;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 4;
 }
 
 /* 3. Scooter */
 main section:nth-of-type(4) img:nth-of-type(3) {
   grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 7;
 }
 
-/* 4. Pacman */
+/* 4. Pacman */ 
 main section:nth-of-type(4) img:nth-of-type(4) {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 4;
+  grid-row-end: 7;
 }
 
-/* 5. Girls*/
+/* 5. Girls */
 main section:nth-of-type(4) img:nth-of-type(5) {
   grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 10;
 }
 
 /* 6. Monkey */
 main section:nth-of-type(4) img:nth-of-type(6) {
-  grid-column-start: 6;
-  grid-column-end: 9;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 7;
+  grid-row-end: 10;
 }
 
 /* 7. wall */
 main section:nth-of-type(4) img:nth-of-type(7) {
   grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-column-end: 4;
+  grid-row-start: 10;
+  grid-row-end: 13;
 }
 
 /* 8. Drawing */
 main section:nth-of-type(4) img:nth-of-type(8) {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 10;
+  grid-row-end: 13;
 }
 
 /* 9. Shoes */
 main section:nth-of-type(4) img:nth-of-type(9) {
   grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row-start: 5;
-  grid-row-end: 6;
+  grid-column-end: 5;
+  grid-row-start: 13;
+  grid-row-end: 16;
 }
 
 /* 10. Splash */
 main section:nth-of-type(4) img:nth-of-type(10) {
-  grid-column-start: 6;
-  grid-column-end: 9;
-  grid-row-start: 5;
-  grid-row-end: 6;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 13;
+  grid-row-end: 16;
+}
+
+
+footer {
+  width: 0.7em;
+  position: fixed;
+  left: 93%;
+  bottom: 2%;
+  z-index: 2;
+  
 }
 
