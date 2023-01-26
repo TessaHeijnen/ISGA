@@ -12,7 +12,7 @@ body header nav a:nth-of-type(1) {
   z-index: 4;
 }
 
-/* LOGO START */
+/* Logo START */
 body header nav a:nth-of-type(2) {
   width: 100%;
   position: fixed;
@@ -111,6 +111,7 @@ body main section:nth-of-type(2) h2 {
   font-family: heyaugust;
   font-size: 1em;
   letter-spacing: 0.05em;
+
 }
 
 @font-face {
@@ -250,23 +251,58 @@ iframe {
   padding-bottom: 2em;
 }
 
-/* Info icon */
-body main section:nth-of-type(6) img:first-of-type {
+/* Icons start style*/
+#mapsbox {
+  color: transparent;
+  left: -0.1em;
+  position: relative;
+  bottom: -29.7em;
+  background-color: #ffffff;
+  border: 3px solid #000;
+  border-image: url(afbdetail/lineblack.svg);
+  border-image-slice: 50;
+  width: 17.8em;
+  height: 7vh;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* box remove de rest*/
+#removeright {
+  color: transparent;
+  left: 4.4em;
   position: absolute;
+  bottom: -10.4em;
+  background-color: rgb(255, 255, 255);
+  width: 14em;
+  height: 8vh;
+  z-index: 1;
+}
+
+/* info+FS icon */
+.buttonsmaps {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  flex-direction: row;
+  bottom: -10.35em;
+  width: 90%;
+  z-index: 30;
+  pointer-events: none;
+}
+
+/* Info icon */
+.buttonsmaps img:first-of-type {
   width: 1.6em;
-  left: 2.3em;
-  bottom: -10em;
-  z-index: 4;
   pointer-events: none;
 }
 
 /* Full Screen icon */
-body main section:nth-of-type(6) a:first-of-type img {
-  position: absolute;
+.buttonsmaps a:first-of-type {
+  display: flex;
   width: 1.4em;
-  left: 16.3em;
-  bottom: -10em;
-  z-index: 3;
+  pointer-events: fill;
 }
 
 /* Button route */
@@ -332,30 +368,8 @@ body main section:nth-of-type(7) img:nth-of-type(3) {
   z-index: -4;
 }
 
-/* GOOGLE MAPS TEST-------------------------------------------------- */
+/* Footer-------------------------------------------------- */
 
-#mapsbox {
-  color: transparent;
-  left: -0.1em;
-  position: relative;
-  bottom: -29.7em;
-  background-color: #ffffff;
-  border: 3px solid #000;
-  border-image: url(afbdetail/lineblack.svg);
-  border-image-slice: 50;
-  width: 17.8em;
-  height: 7vh;
-  z-index: 2;
-  pointer-events: none;
-}
-
-#removeright {
-  color: transparent;
-  left: 4.4em;
-  position: absolute;
-  bottom: -10.4em;
-  background-color: rgb(255, 255, 255);
-  width: 14em;
-  height: 8vh;
-  z-index: 1;
+footer {
+  display: none;
 }
